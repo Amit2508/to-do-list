@@ -1,0 +1,8 @@
+<%- include("header"); -%>
+<h1>Your Lists</h1>
+<div class="box">
+  <% lists.forEach(function(list) { %>
+  <p><%= list.name %> <a href="/lists/<%= list.name %>">></a> </p>
+  <% }); %>
+</div>
+<%- include("footer"); -%>
